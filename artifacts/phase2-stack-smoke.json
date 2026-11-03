@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "database": "trippilot_test",
+  "via": "nginx :5173 \u2192 API :8000 \u2192 PostgreSQL",
+  "checks": [
+    "UI and readiness",
+    "cookie authentication",
+    "trip and preference persistence",
+    "four distinct CP-SAT plans",
+    "selection",
+    "upvote and rank",
+    "partial edit preserves other day",
+    "immutable versions and rollback",
+    "owner diagnostics",
+    "logout access revoked"
+  ],
+  "generated_plans": 4,
+  "versions": 3
+}

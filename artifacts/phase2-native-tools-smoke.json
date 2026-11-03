@@ -1,0 +1,30 @@
+{
+  "provider": "ollama",
+  "model": "qwen3:1.7b",
+  "synthetic_provider_data": true,
+  "passed": true,
+  "failure": null,
+  "metrics": {
+    "llm_calls": 3,
+    "input_tokens": 2948,
+    "output_tokens": 327,
+    "usage_complete": true,
+    "estimated_cost_usd": "0.0",
+    "structured_output_validity": 0.6666666666666666,
+    "received_responses": 3,
+    "valid_structured_responses": 2,
+    "tool_calls": 1,
+    "tool_success_rate": 1.0,
+    "unsupported_reference_rate": 0.0,
+    "references_checked": 4,
+    "unsupported_references": 0,
+    "fallback_used": false,
+    "tools": [
+      {
+        "name": "search_places",
+        "success": true,
+        "latency_ms": 0.291
+      }
+    ]
+  }
+}

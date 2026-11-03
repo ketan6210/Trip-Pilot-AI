@@ -1,0 +1,25 @@
+{
+  "original_unchanged": true,
+  "source": "trippilot.db",
+  "verification_copy": "/private/tmp/trippilot-phase2-migration-hdygfe61/verified.db",
+  "revision": "0012_ai_planning",
+  "preserved_rows_by_original_table": {
+    "trips": 38,
+    "travelers": 106,
+    "trip_budgets": 33,
+    "plan_variants": 144,
+    "traveler_preferences": 265,
+    "votes": 3,
+    "places": 2001,
+    "trip_states": 54,
+    "orchestration_messages": 514,
+    "plan_details": 22,
+    "plan_cost_entries": 607,
+    "place_contexts": 92,
+    "place_context_sources": 205,
+    "meals": 63,
+    "expense_line_items": 240,
+    "budget_snapshots": 5
+  },
+  "normalized_activities": 188
+}

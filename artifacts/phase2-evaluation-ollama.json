@@ -1,0 +1,620 @@
+{
+  "generated_at": "2026-10-27T15:03:42.433927+00:00",
+  "evidence": "Synthetic mock-provider fixtures with the configured model; not live travel evidence",
+  "llm_enabled": true,
+  "configured_llm_provider": "ollama",
+  "embedding_backend": "concept_hash",
+  "metrics": {
+    "scenarios_passed": 6,
+    "scenarios_total": 6,
+    "plans_evaluated": 20,
+    "constraint_satisfaction_rate": 1.0,
+    "budget_compliance_rate": 1,
+    "schedule_validity_rate": 1,
+    "provider_reference_grounding_rate": 1.0,
+    "mean_preference_coverage": 0.8666666666666667,
+    "median_generation_latency_ms": 3908.732,
+    "llm_calls": 9,
+    "input_tokens": 15007,
+    "output_tokens": 919,
+    "usage_complete": true,
+    "estimated_cost_usd": "0.0",
+    "structured_output_validity": 0.5555555555555556,
+    "unsupported_reference_rate": 0.0,
+    "tool_calls": 10,
+    "tool_success_rate": 1.0,
+    "fallback_requests": 4
+  },
+  "scenarios": [
+    {
+      "scenario": "Budget NYC",
+      "http_status": 200,
+      "latency_ms": 4344.903,
+      "expected_rejection": false,
+      "plans": [
+        {
+          "strategy": "balanced",
+          "constraint_satisfaction_rate": 1.0,
+          "budget_compliant": true,
+          "schedule_valid": true,
+          "provider_reference_grounding_rate": 1.0,
+          "activity_count": 6,
+          "route_km": 7.0499,
+          "nearest_neighbor_baseline_km": 7.0499,
+          "route_to_nearest_neighbor_ratio": 1.0,
+          "preference_coverage": 1.0,
+          "minimum_member_coverage": 1.0,
+          "solver_status": "OPTIMAL",
+          "solver_seconds": 0.4506
+        },
+        {
+          "strategy": "budget",
+          "constraint_satisfaction_rate": 1.0,
+          "budget_compliant": true,
+          "schedule_valid": true,
+          "provider_reference_grounding_rate": 1.0,
+          "activity_count": 6,
+          "route_km": 8.6668,
+          "nearest_neighbor_baseline_km": 8.6668,
+          "route_to_nearest_neighbor_ratio": 1.0,
+          "preference_coverage": 1.0,
+          "minimum_member_coverage": 1.0,
+          "solver_status": "OPTIMAL",
+          "solver_seconds": 0.1087
+        },
+        {
+          "strategy": "experience_heavy",
+          "constraint_satisfaction_rate": 1.0,
+          "budget_compliant": true,
+          "schedule_valid": true,
+          "provider_reference_grounding_rate": 1.0,
+          "activity_count": 8,
+          "route_km": 12.3878,
+          "nearest_neighbor_baseline_km": 12.3878,
+          "route_to_nearest_neighbor_ratio": 1.0,
+          "preference_coverage": 1.0,
+          "minimum_member_coverage": 1.0,
+          "solver_status": "OPTIMAL",
+          "solver_seconds": 0.226
+        },
+        {
+          "strategy": "relaxed",
+          "constraint_satisfaction_rate": 1.0,
+          "budget_compliant": true,
+          "schedule_valid": true,
+          "provider_reference_grounding_rate": 1.0,
+          "activity_count": 4,
+          "route_km": 0.7275,
+          "nearest_neighbor_baseline_km": 0.7275,
+          "route_to_nearest_neighbor_ratio": 1.0,
+          "preference_coverage": 1.0,
+          "minimum_member_coverage": 1.0,
+          "solver_status": "OPTIMAL",
+          "solver_seconds": 0.0687
+        }
+      ],
+      "metrics": {
+        "llm_calls": 1,
+        "input_tokens": 1226,
+        "output_tokens": 104,
+        "usage_complete": true,
+        "estimated_cost_usd": "0.0",
+        "structured_output_validity": 0.0,
+        "received_responses": 1,
+        "valid_structured_responses": 0,
+        "tool_calls": 0,
+        "tool_success_rate": null,
+        "unsupported_reference_rate": null,
+        "references_checked": 0,
+        "unsupported_references": 0,
+        "fallback_used": true,
+        "tools": [],
+        "candidate_count": 18,
+        "rejected_count": 0,
+        "budget_repairs": 0,
+        "constraint_violation_rate": 0.0,
+        "plans_validated": 4,
+        "distinct_activity_sets": 4
+      },
+      "distinct_activity_sets": 4,
+      "passed": true
+    },
+    {
+      "scenario": "Family trip",
+      "http_status": 200,
+      "latency_ms": 5503.059,
+      "expected_rejection": false,
+      "plans": [
+        {
+          "strategy": "balanced",
+          "constraint_satisfaction_rate": 1.0,
+          "budget_compliant": true,
+          "schedule_valid": true,
+          "provider_reference_grounding_rate": 1.0,
+          "activity_count": 6,
+          "route_km": 11.6388,
+          "nearest_neighbor_baseline_km": 11.6388,
+          "route_to_nearest_neighbor_ratio": 1.0,
+          "preference_coverage": 1.0,
+          "minimum_member_coverage": 1.0,
+          "solver_status": "OPTIMAL",
+          "solver_seconds": 0.0765
+        },
+        {
+          "strategy": "budget",
+          "constraint_satisfaction_rate": 1.0,
+          "budget_compliant": true,
+          "schedule_valid": true,
+          "provider_reference_grounding_rate": 1.0,
+          "activity_count": 6,
+          "route_km": 10.3721,
+          "nearest_neighbor_baseline_km": 10.3721,
+          "route_to_nearest_neighbor_ratio": 1.0,
+          "preference_coverage": 0.6666666666666666,
+          "minimum_member_coverage": 0.6666666666666666,
+          "solver_status": "OPTIMAL",
+          "solver_seconds": 0.0698
+        },
+        {
+          "strategy": "experience_heavy",
+          "constraint_satisfaction_rate": 1.0,
+          "budget_compliant": true,
+          "schedule_valid": true,
+          "provider_reference_grounding_rate": 1.0,
+          "activity_count": 8,
+          "route_km": 12.1734,
+          "nearest_neighbor_baseline_km": 12.0072,
+          "route_to_nearest_neighbor_ratio": 1.0138,
+          "preference_coverage": 1.0,
+          "minimum_member_coverage": 1.0,
+          "solver_status": "OPTIMAL",
+          "solver_seconds": 0.1212
+        },
+        {
+          "strategy": "relaxed",
+          "constraint_satisfaction_rate": 1.0,
+          "budget_compliant": true,
+          "schedule_valid": true,
+          "provider_reference_grounding_rate": 1.0,
+          "activity_count": 4,
+          "route_km": 0.8215,
+          "nearest_neighbor_baseline_km": 0.8215,
+          "route_to_nearest_neighbor_ratio": 1.0,
+          "preference_coverage": 0.6666666666666666,
+          "minimum_member_coverage": 0.6666666666666666,
+          "solver_status": "OPTIMAL",
+          "solver_seconds": 0.055
+        }
+      ],
+      "metrics": {
+        "llm_calls": 2,
+        "input_tokens": 4905,
+        "output_tokens": 222,
+        "usage_complete": true,
+        "estimated_cost_usd": "0.0",
+        "structured_output_validity": 1.0,
+        "received_responses": 2,
+        "valid_structured_responses": 2,
+        "tool_calls": 4,
+        "tool_success_rate": 1.0,
+        "unsupported_reference_rate": 0.0,
+        "references_checked": 4,
+        "unsupported_references": 0,
+        "fallback_used": false,
+        "tools": [
+          {
+            "name": "search_places",
+            "success": true,
+            "latency_ms": 0.078
+          },
+          {
+            "name": "search_places",
+            "success": true,
+            "latency_ms": 0.009
+          },
+          {
+            "name": "search_places",
+            "success": true,
+            "latency_ms": 0.008
+          },
+          {
+            "name": "search_places",
+            "success": true,
+            "latency_ms": 0.01
+          }
+        ],
+        "candidate_count": 15,
+        "rejected_count": 3,
+        "budget_repairs": 0,
+        "constraint_violation_rate": 0.0,
+        "plans_validated": 4,
+        "distinct_activity_sets": 4
+      },
+      "distinct_activity_sets": 4,
+      "passed": true
+    },
+    {
+      "scenario": "Nightlife trip",
+      "http_status": 200,
+      "latency_ms": 3472.561,
+      "expected_rejection": false,
+      "plans": [
+        {
+          "strategy": "balanced",
+          "constraint_satisfaction_rate": 1.0,
+          "budget_compliant": true,
+          "schedule_valid": true,
+          "provider_reference_grounding_rate": 1.0,
+          "activity_count": 6,
+          "route_km": 4.3565,
+          "nearest_neighbor_baseline_km": 4.2244,
+          "route_to_nearest_neighbor_ratio": 1.0313,
+          "preference_coverage": 1.0,
+          "minimum_member_coverage": 1.0,
+          "solver_status": "OPTIMAL",
+          "solver_seconds": 0.1681
+        },
+        {
+          "strategy": "budget",
+          "constraint_satisfaction_rate": 1.0,
+          "budget_compliant": true,
+          "schedule_valid": true,
+          "provider_reference_grounding_rate": 1.0,
+          "activity_count": 6,
+          "route_km": 3.4893,
+          "nearest_neighbor_baseline_km": 3.4893,
+          "route_to_nearest_neighbor_ratio": 1.0,
+          "preference_coverage": 0.6666666666666666,
+          "minimum_member_coverage": 0.6666666666666666,
+          "solver_status": "OPTIMAL",
+          "solver_seconds": 0.124
+        },
+        {
+          "strategy": "experience_heavy",
+          "constraint_satisfaction_rate": 1.0,
+          "budget_compliant": true,
+          "schedule_valid": true,
+          "provider_reference_grounding_rate": 1.0,
+          "activity_count": 8,
+          "route_km": 7.7775,
+          "nearest_neighbor_baseline_km": 7.0398,
+          "route_to_nearest_neighbor_ratio": 1.1048,
+          "preference_coverage": 1.0,
+          "minimum_member_coverage": 1.0,
+          "solver_status": "OPTIMAL",
+          "solver_seconds": 0.855
+        },
+        {
+          "strategy": "relaxed",
+          "constraint_satisfaction_rate": 1.0,
+          "budget_compliant": true,
+          "schedule_valid": true,
+          "provider_reference_grounding_rate": 1.0,
+          "activity_count": 4,
+          "route_km": 1.3569,
+          "nearest_neighbor_baseline_km": 1.3569,
+          "route_to_nearest_neighbor_ratio": 1.0,
+          "preference_coverage": 1.0,
+          "minimum_member_coverage": 1.0,
+          "solver_status": "OPTIMAL",
+          "solver_seconds": 0.0734
+        }
+      ],
+      "metrics": {
+        "llm_calls": 1,
+        "input_tokens": 1228,
+        "output_tokens": 104,
+        "usage_complete": true,
+        "estimated_cost_usd": "0.0",
+        "structured_output_validity": 0.0,
+        "received_responses": 1,
+        "valid_structured_responses": 0,
+        "tool_calls": 0,
+        "tool_success_rate": null,
+        "unsupported_reference_rate": null,
+        "references_checked": 0,
+        "unsupported_references": 0,
+        "fallback_used": true,
+        "tools": [],
+        "candidate_count": 18,
+        "rejected_count": 0,
+        "budget_repairs": 0,
+        "constraint_violation_rate": 0.0,
+        "plans_validated": 4,
+        "distinct_activity_sets": 4
+      },
+      "distinct_activity_sets": 4,
+      "passed": true
+    },
+    {
+      "scenario": "Accessibility-sensitive",
+      "http_status": 200,
+      "latency_ms": 1951.807,
+      "expected_rejection": false,
+      "plans": [
+        {
+          "strategy": "balanced",
+          "constraint_satisfaction_rate": 1.0,
+          "budget_compliant": true,
+          "schedule_valid": true,
+          "provider_reference_grounding_rate": 1.0,
+          "activity_count": 6,
+          "route_km": 11.6388,
+          "nearest_neighbor_baseline_km": 11.6388,
+          "route_to_nearest_neighbor_ratio": 1.0,
+          "preference_coverage": 1.0,
+          "minimum_member_coverage": 1.0,
+          "solver_status": "OPTIMAL",
+          "solver_seconds": 0.1185
+        },
+        {
+          "strategy": "budget",
+          "constraint_satisfaction_rate": 1.0,
+          "budget_compliant": true,
+          "schedule_valid": true,
+          "provider_reference_grounding_rate": 1.0,
+          "activity_count": 6,
+          "route_km": 10.3721,
+          "nearest_neighbor_baseline_km": 10.3721,
+          "route_to_nearest_neighbor_ratio": 1.0,
+          "preference_coverage": 0.6666666666666666,
+          "minimum_member_coverage": 0.6666666666666666,
+          "solver_status": "OPTIMAL",
+          "solver_seconds": 0.1143
+        },
+        {
+          "strategy": "experience_heavy",
+          "constraint_satisfaction_rate": 1.0,
+          "budget_compliant": true,
+          "schedule_valid": true,
+          "provider_reference_grounding_rate": 1.0,
+          "activity_count": 8,
+          "route_km": 12.1734,
+          "nearest_neighbor_baseline_km": 12.0072,
+          "route_to_nearest_neighbor_ratio": 1.0138,
+          "preference_coverage": 1.0,
+          "minimum_member_coverage": 1.0,
+          "solver_status": "OPTIMAL",
+          "solver_seconds": 0.1224
+        },
+        {
+          "strategy": "relaxed",
+          "constraint_satisfaction_rate": 1.0,
+          "budget_compliant": true,
+          "schedule_valid": true,
+          "provider_reference_grounding_rate": 1.0,
+          "activity_count": 4,
+          "route_km": 0.8215,
+          "nearest_neighbor_baseline_km": 0.8215,
+          "route_to_nearest_neighbor_ratio": 1.0,
+          "preference_coverage": 0.6666666666666666,
+          "minimum_member_coverage": 0.6666666666666666,
+          "solver_status": "OPTIMAL",
+          "solver_seconds": 0.0709
+        }
+      ],
+      "metrics": {
+        "llm_calls": 1,
+        "input_tokens": 1228,
+        "output_tokens": 104,
+        "usage_complete": true,
+        "estimated_cost_usd": "0.0",
+        "structured_output_validity": 0.0,
+        "received_responses": 1,
+        "valid_structured_responses": 0,
+        "tool_calls": 0,
+        "tool_success_rate": null,
+        "unsupported_reference_rate": null,
+        "references_checked": 0,
+        "unsupported_references": 0,
+        "fallback_used": true,
+        "tools": [],
+        "candidate_count": 18,
+        "rejected_count": 0,
+        "budget_repairs": 0,
+        "constraint_violation_rate": 0.0,
+        "plans_validated": 4,
+        "distinct_activity_sets": 4
+      },
+      "distinct_activity_sets": 4,
+      "passed": true
+    },
+    {
+      "scenario": "Conflicting member interests",
+      "http_status": 200,
+      "latency_ms": 2949.602,
+      "expected_rejection": false,
+      "plans": [
+        {
+          "strategy": "balanced",
+          "constraint_satisfaction_rate": 1.0,
+          "budget_compliant": true,
+          "schedule_valid": true,
+          "provider_reference_grounding_rate": 1.0,
+          "activity_count": 6,
+          "route_km": 7.0946,
+          "nearest_neighbor_baseline_km": 7.0946,
+          "route_to_nearest_neighbor_ratio": 1.0,
+          "preference_coverage": 0.8333333333333333,
+          "minimum_member_coverage": 0.6666666666666666,
+          "solver_status": "OPTIMAL",
+          "solver_seconds": 0.1321
+        },
+        {
+          "strategy": "budget",
+          "constraint_satisfaction_rate": 1.0,
+          "budget_compliant": true,
+          "schedule_valid": true,
+          "provider_reference_grounding_rate": 1.0,
+          "activity_count": 6,
+          "route_km": 10.3721,
+          "nearest_neighbor_baseline_km": 10.3721,
+          "route_to_nearest_neighbor_ratio": 1.0,
+          "preference_coverage": 0.5833333333333333,
+          "minimum_member_coverage": 0.5,
+          "solver_status": "OPTIMAL",
+          "solver_seconds": 0.1177
+        },
+        {
+          "strategy": "experience_heavy",
+          "constraint_satisfaction_rate": 1.0,
+          "budget_compliant": true,
+          "schedule_valid": true,
+          "provider_reference_grounding_rate": 1.0,
+          "activity_count": 8,
+          "route_km": 9.8093,
+          "nearest_neighbor_baseline_km": 9.6431,
+          "route_to_nearest_neighbor_ratio": 1.0172,
+          "preference_coverage": 1.0,
+          "minimum_member_coverage": 1.0,
+          "solver_status": "OPTIMAL",
+          "solver_seconds": 1.0088
+        },
+        {
+          "strategy": "relaxed",
+          "constraint_satisfaction_rate": 1.0,
+          "budget_compliant": true,
+          "schedule_valid": true,
+          "provider_reference_grounding_rate": 1.0,
+          "activity_count": 4,
+          "route_km": 0.8215,
+          "nearest_neighbor_baseline_km": 0.8215,
+          "route_to_nearest_neighbor_ratio": 1.0,
+          "preference_coverage": 0.5833333333333333,
+          "minimum_member_coverage": 0.5,
+          "solver_status": "OPTIMAL",
+          "solver_seconds": 0.0876
+        }
+      ],
+      "metrics": {
+        "llm_calls": 1,
+        "input_tokens": 1224,
+        "output_tokens": 104,
+        "usage_complete": true,
+        "estimated_cost_usd": "0.0",
+        "structured_output_validity": 0.0,
+        "received_responses": 1,
+        "valid_structured_responses": 0,
+        "tool_calls": 0,
+        "tool_success_rate": null,
+        "unsupported_reference_rate": null,
+        "references_checked": 0,
+        "unsupported_references": 0,
+        "fallback_used": true,
+        "tools": [],
+        "candidate_count": 18,
+        "rejected_count": 0,
+        "budget_repairs": 0,
+        "constraint_violation_rate": 0.0,
+        "plans_validated": 4,
+        "distinct_activity_sets": 4
+      },
+      "distinct_activity_sets": 4,
+      "passed": true
+    },
+    {
+      "scenario": "Impossible budget",
+      "http_status": 422,
+      "latency_ms": 5311.19,
+      "expected_rejection": true,
+      "error": {
+        "error": {
+          "code": "NO_FEASIBLE_SCHEDULE",
+          "message": "No candidates or budget remain after hard constraints.",
+          "details": {}
+        },
+        "detail": "No candidates or budget remain after hard constraints."
+      },
+      "failed_run": {
+        "id": "53492106-14ce-4e9e-839f-776991ca419a",
+        "trip_id": 6,
+        "operation": "generate",
+        "status": "failed",
+        "latency_ms": 5307.145,
+        "metrics": {
+          "llm_calls": 3,
+          "input_tokens": 5196,
+          "output_tokens": 281,
+          "usage_complete": true,
+          "estimated_cost_usd": "0.0",
+          "structured_output_validity": 1.0,
+          "received_responses": 3,
+          "valid_structured_responses": 3,
+          "tool_calls": 6,
+          "tool_success_rate": 1.0,
+          "unsupported_reference_rate": 0.0,
+          "references_checked": 4,
+          "unsupported_references": 0,
+          "fallback_used": false,
+          "tools": [
+            {
+              "name": "search_places",
+              "success": true,
+              "latency_ms": 0.153
+            },
+            {
+              "name": "search_places",
+              "success": true,
+              "latency_ms": 0.257
+            },
+            {
+              "name": "get_place_details",
+              "success": true,
+              "latency_ms": 0.066
+            },
+            {
+              "name": "get_place_details",
+              "success": true,
+              "latency_ms": 0.011
+            },
+            {
+              "name": "get_place_details",
+              "success": true,
+              "latency_ms": 0.005
+            },
+            {
+              "name": "get_place_details",
+              "success": true,
+              "latency_ms": 0.004
+            }
+          ]
+        },
+        "stages": [
+          {
+            "name": "constraints_and_missing_information",
+            "status": "ok",
+            "latency_ms": 0.82
+          },
+          {
+            "name": "candidate_retrieval",
+            "status": "ok",
+            "latency_ms": 1.354
+          },
+          {
+            "name": "hard_filtering",
+            "status": "ok",
+            "latency_ms": 0.175
+          },
+          {
+            "name": "group_preference_ranking",
+            "status": "ok",
+            "latency_ms": 0.328
+          },
+          {
+            "name": "structured_tool_assistance",
+            "status": "ok",
+            "latency_ms": 5302.755
+          },
+          {
+            "name": "optimize_balanced",
+            "status": "failed",
+            "latency_ms": 0.921
+          }
+        ],
+        "error_code": "NO_FEASIBLE_SCHEDULE",
+        "created_at": "2026-10-27T15:03:42.423322"
+      },
+      "passed": true
+    }
+  ]
+}

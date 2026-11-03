@@ -1,0 +1,12 @@
+.error {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.error button {
+  margin: 0;
+  padding: 7px 12px;
+  color: #9f312d;
+  background: #fff;
+}
